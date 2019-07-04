@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/animated.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<style type="text/css">
+			html,
+			body {
+				padding: 0;
+				background-color: #fff;
+			}
+
+			.banner>img {
+				position: relative;
+				width: 100%;
+				height: auto;
+				transition: all 1s;
+				top: 0;
+			}
+
+			.card {
+				position: relative;
+				transition: all 1s ease-out;
+				color: #666;
+				opacity: 1;
+				background-color: #fff;
+				border-radius: 16px;
+				transform: scale(1);
+			}
+
+			.card>span {
+				z-index: 11;
+				position: absolute;
+				top: 5vw;
+				left: 20px;
+				font-size: 5vw;
+			}
+
+			.content {
+				transform: translateY(-30px);
+			}
+
+			.content>div {
+				margin: 6px 2px;
+				display: inline-block;
+				width: 45%;
+				height: 16vw;
+				box-shadow: 0 0 10px -4px #aaa;
+			}
+			.content>div:nth-child(2n-1) {
+				margin-left: 4%;
+			}
+			.content>div>img {
+				width: 100%;
+				height: 100%;
+			}
+			.user-delay1 {
+				animation-delay: 0s;
+			}
+			.user-delay2 {
+				animation-delay: .15s;
+			}
+			.user-delay3 {
+				animation-delay: .3s;
+			}
+			.user-delay4 {
+				animation-delay: .45s;
+			}
+			.user-delay5 {
+				animation-delay: .6s;
+			}
+			.user-delay6 {
+				animation-delay: .75s;
+			}
+			.user-delay7 {
+				animation-delay: 1s;
+			}
+			.user-delay8 {
+				animation-delay: 1.15s;
+			}
+			.footer{
+				position: fixed;
+				bottom: 0px;
+				width: 100%;
+				height: 30px;
+				line-height: 30px;
+				background-color: #fff;
+				text-align: center;
+			}
+			.footer p{
+				font-size: 13px;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<img src="img/banner01.png">
+		</div>
+		<div class="content">
+			<div id="frist" class="card animated fadeInDown user-delay1" onclick="location.href = 'yiyuanjieshao.html'">
+				<img src="img/医院简介.png" >
+				<span class="user-font">医院简介</span>
+			</div>
+			<div class="card animated fadeInDown user-delay2" onclick="location.href = 'keshiCenter.html'">
+				<img src="img/科室介绍.png">
+				<span class="user-font">科室介绍</span>
+			</div>
+			<div class="card animated fadeInDown user-delay3">
+				<img src="img/尖端设备.png">
+				<span class="user-font">尖端设备</span>
+			</div>
+			<div class="card animated fadeInDown user-delay4">
+				<img src="img/专家团队.png">
+				<span class="user-font">专家团队</span>
+			</div>
+			<div class="card animated fadeInDown user-delay5" onclick="location.href = 'newsCenter.html'">
+				<img src="img/新闻中心.png">
+				<span class="user-font">新闻媒体</span>
+			</div>
+			<div class="card animated fadeInDown user-delay6" onclick="location.href = 'http://3gimg.qq.com/lightmap/v1/wxmarker/index.html?marker=coord:29.58646,106.30131;title:%E9%87%8D%E5%BA%86%E6%B5%B7%E5%90%89%E4%BA%9A;addr:%E4%B8%AD%E5%9B%BD%E9%87%8D%E5%BA%86%E5%B8%82%E9%87%8D%E5%BA%86%E5%B8%82%E6%B2%99%E5%9D%AA%E5%9D%9D%E5%8C%BA&referer=wexinmp_profile'">
+				<img src="img/医院导航.png" >
+				<span class="user-font">来院导航</span>
+			</div>
+			<div class="card animated fadeInDown user-delay7">
+				<img src="img/人才招聘.png">
+				<span class="user-font">人才招聘</span>
+			</div>
+			<div class="card animated fadeInDown user-delay8" onclick="location.href = 'comentUS.html'">
+				<img src="img/联系我们.png">
+				<span class="user-font">联系我们</span>
+			</div>
+		</div>
+		<div class="footer">
+			<p>版权信息：重庆(中美)海吉亚肿瘤医院</p>
+		</div>
+	</body>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>
